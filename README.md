@@ -1,7 +1,7 @@
 # WindowsClientServer
 
 
-Basic windows client &amp; server sockets programs.
+Basic windows client &amp; server sockets programs in C & C++.
 
 ## Build
 Open the sln with VS and build all.
