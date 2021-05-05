@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-SOCKET connect_to_port(const char *hostname, unsigned int port)
+SOCKET connect_to_port(PCWSTR hostname, unsigned int port)
 {
     WSADATA wsa;
     SOCKET s;
@@ -25,8 +25,7 @@ SOCKET connect_to_port(const char *hostname, unsigned int port)
 
     printf("Socket created.\n");
 
-
-    server.sin_addr.s_addr = inet_addr(hostname);
+    InetPton(AF_INET, hostname, &(server.sin_addr));
     server.sin_family = AF_INET;
     server.sin_port = htons(port);
 

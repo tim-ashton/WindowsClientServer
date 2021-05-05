@@ -4,7 +4,7 @@
 #include <ws2tcpip.h>
 
 
-SOCKET connect_to_port(const char *hostname, unsigned int port);
+SOCKET connect_to_port(PCWSTR hostname, unsigned int port);
 
 
 #endif
